@@ -1,0 +1,100 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website update | Vortex network</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="../css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="./script/lodash.js"></script>
+		<script defer src="./script/script.js"></script>
+		<script defer src="./script/autoExpand.js"></script>
+		<script src="https://cdn.rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+        <link   rel="stylesheet" href="../css/newlook.css">        
+            <script type="text/javascript">
+                /* =============================
+                This script generates sample text for the body content. 
+                You can remove this script and any reference to it. 
+                 ============================= */
+                var bodyText=[""]
+                function generateText(sentenceCount){
+                    for (var i=0; i<sentenceCount; i++)
+                    document.write(bodyText[Math.floor(Math.random()*0)]+" ")
+                }
+            </script>	
+    </head>
+    <body>
+        <header id="header">
+			<div class="innertube">
+				<p>Vortex Network server/realm</p>
+			</div>
+		</header>
+				
+		<main>
+			<div class="innertube">
+				<h1>Webhook sending #websiteupdate</h1>
+				<label for="weburl"><span class="rqs" title="This is required">*</span> Webhook URL</label>
+				<input type="text" value="https://discord.com/api/webhooks/912466069178974258/L8cmJ--U7UFcl9GmghRxoWZHtUcaRSey-IMACzGFgIRpl5FpuqIZ7XuIHLXd8Nk8TnDb" id="url"  name="weburl" style="width: 20em" />
+				<p class="validation"  id="urlValidation"></p>
+				<br/><br/>
+				<div class="inlblock">
+				  <label for="nick">Webhook Username</label>
+				  <input type="text" id="nick" value="Website update" name="nick" maxlength="32"/>
+				</div>
+				<div class="inlblock" style="margin-left: 40px;">
+				  <label for="avatar">Webhook Avatar URL</label>
+				  <input type="url" id="avatar" value="https://repository-images.githubusercontent.com/120371205/b6740400-92d4-11ea-8a13-d5f6e0558e9b" name="avatar" class="inlblock" style="width: 20em;"/>
+				</div>
+				<br/><br/><br/>
+				<div class="inlblock">
+				  <label for="text">Message Content</label>
+				  <textarea class="autoExpand" id="text" name="text" data-min-rows="1" rows="1" cols="50" maxlength="2000"></textarea>
+				</div>
+				<div class="inlblock" style="margin-left: 40px;">
+				  <label for="tts" style="margin-bottom: 5px;">Use TTS</label>
+				  <label class="switch">
+					<input type="checkbox" id="tts" name="tts"/>
+					<div class="slider round"></div>
+				  </label>
+				</div>
+				<div id="send" class="dbutton">Send</div>
+				<h2>Embeds</h2>
+				<div id="embeds">
+				</div>
+				<div id="newemb" class="dbutton">Add Embed</div>
+				<p><script>generateText(1)</script></p>
+			</div>
+		</main>
+
+        <nav id="nav">
+			<div class="innertube">
+				<h1>Main tabs</h1>
+				<ul>
+					<li><a href="../Main.html">Home</a></li>
+					<li><a href="../About.html">about</a></li>
+					<li><a href="https://k3chow12.wixsite.com/vortexnetwork/contactus">contact</a></li>
+					<li><a href="../Server.html">Servers</a></li>
+					<li><a href="../Realm.html">Realm</a></li>
+				</ul>
+				<h1>Social media</h1>
+				<ul>
+					<li><a href="https://www.youtube.com/Ashley_wallis">Youtube</a></li>
+					<li><a href="https://www.twitch.com/k3chow11">Twitch</a></li>
+					<li><a href="https://discordapp.com/invite/D8Z4HyRT6t">Discord</a></li>
+					<li><a href="https://twitter.com/k3chow1">Twitter</a></li>
+					<li><a href="announcements.html">Discord-Announments</a></li>
+                    <li><a href="changelog.html">Discord-Changelog</a></li>
+                    <li><a href="evil-anticheat.html">Discord-Evilanitcheat</a></li>          
+                    <li><a href="game-chat.html">Discord-Gamechat</a></li>
+                    <li><a href="rules.html">Discord-rules</a></li>
+					<li><a href="Websiteupdate.html">Discord-Websiteupdates</a></li>
+				</ul>
+			</div>
+		</nav>		
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p>&copy; Copyright 2021 VortexNetwork.net</p>
+			</div>
+		</footer>	
+    </body>
+</html>
